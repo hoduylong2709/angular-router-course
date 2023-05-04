@@ -10,7 +10,12 @@
   </mat-card-content>
 
   <mat-card-actions class="course-actions">
-    <button mat-raised-button color="primary" [routerLink]="[course.url]">
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="[course.url]"
+      [queryParams]="{ couponCode: 'LONG_HO_DUY' }"
+    >
       VIEW COURSE
     </button>
 
